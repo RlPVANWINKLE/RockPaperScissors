@@ -16,9 +16,7 @@ function sub(userchoice){
     }
     else if(userchoice =='scissors'){
         document.getElementById('you').src="images/scissors.jpg"
-        
     }
-
     else if(pcChoice =='rock'){
         document.getElementById('PC').src="images/rock.jpg"
     }
@@ -27,10 +25,9 @@ function sub(userchoice){
     }
     else if(pcChoice =='scissors'){
         document.getElementById('PC').src="images/scissors.jpg"
-        
     }
-    
-    if(userchoice === 'rock' && pcChoice === 'scissors'){
+    <!-- decisions-->
+    else if(userchoice === 'rock' && pcChoice === 'scissors'){
         win()
     }
     else if(userchoice === 'paper' && pcChoice === 'rock'){
@@ -55,7 +52,7 @@ function sub(userchoice){
     }
     function lose(){
         pcScore++
-        document.getElementById('results').textContent = "You Win!";
+        document.getElementById('results').textContent = "You Lose!";
         document.getElementById('userScore').textContent = "You: "+ pcScore;
 
         
