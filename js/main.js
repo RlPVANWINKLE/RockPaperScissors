@@ -53,7 +53,7 @@ function sub(userchoice){
 
         
     }
-    function win(){
+    function lose(){
         pcScore++
         document.getElementById('results').textContent = "You Win!";
         document.getElementById('userScore').textContent = "You: "+ pcScore;
