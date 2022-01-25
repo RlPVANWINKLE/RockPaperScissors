@@ -17,7 +17,7 @@ function sub(userchoice){
     else if(userchoice =='scissors'){
         document.getElementById('you').src="images/scissors.jpg"
     }
-    else if(pcChoice =='rock'){
+    if(pcChoice =='rock'){
         document.getElementById('PC').src="images/rock.jpg"
     }
     else if(pcChoice =='paper'){
@@ -27,7 +27,7 @@ function sub(userchoice){
         document.getElementById('PC').src="images/scissors.jpg"
     }
     <!-- decisions-->
-    else if(userchoice === 'rock' && pcChoice === 'scissors'){
+    if(userchoice === 'rock' && pcChoice === 'scissors'){
         win()
     }
     else if(userchoice === 'paper' && pcChoice === 'rock'){
