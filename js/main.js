@@ -47,14 +47,14 @@ function sub(userchoice){
     }
 
     function win(){
-        userScore = userScore + 1
+        userScore++
         document.getElementById('results').textContent = "You Win!";
         document.getElementById('userScore').textContent = "You: "+ userScore;
 
         
     }
     function win(){
-        pcScore = pcScore + 1
+        pcScore++
         document.getElementById('results').textContent = "You Win!";
         document.getElementById('userScore').textContent = "You: "+ pcScore;
 
