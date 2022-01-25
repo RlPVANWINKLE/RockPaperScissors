@@ -19,7 +19,7 @@ function sub(userchoice){
         
     }
 
-    if(pcChoice =='rock'){
+    else if(pcChoice =='rock'){
         document.getElementById('PC').src="images/rock.jpg"
     }
     else if(pcChoice =='paper'){
