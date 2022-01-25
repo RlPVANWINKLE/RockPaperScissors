@@ -1,12 +1,12 @@
 document.getElementById('rock').addEventListener("click", function(){sub('rock')})
 document.getElementById('paper').addEventListener('click', function(){sub('paper')})
 document.getElementById('scissors').addEventListener('click', function(){sub('scissors')})
+let userScore = 0;
+let pcScore = 0;
 function sub(userchoice){
     let random = Math.floor(Math.random() * 3)
     let choices = ['rock', 'paper', 'scissors']
     let pcChoice = choices[random]
-    let userScore = 0;
-    let pcScore = 0;
 
     if(userchoice =='rock'){
         document.getElementById('you').src="images/rock.jpg"
